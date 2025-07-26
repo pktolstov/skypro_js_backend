@@ -24,7 +24,6 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Обработка запроса `?users`
   if (users) {
     const filePath = path.join(__dirname, "data", "users.json");
     fs.readFile(filePath, "utf8", (err, data) => {
@@ -39,14 +38,12 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Обработка запроса без параметров
   if ([...searchParams.keys()].length === 0) {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Hello, World!");
     return;
   }
 
-  // Все остальные случаи — ошибка
   res.writeHead(500, { "Content-Type": "text/plain" });
   res.end();
 });
