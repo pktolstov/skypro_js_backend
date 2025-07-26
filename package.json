@@ -1,0 +1,25 @@
+{
+  "name": "skypro_js_backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/pktolstov/skypro_js_backend#readme",
+  "bugs": {
+    "url": "https://github.com/pktolstov/skypro_js_backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pktolstov/skypro_js_backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
